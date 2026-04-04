@@ -48,7 +48,7 @@ class LightboX_Plugin implements Typecho_Plugin_Interface
         $form->addInput($removeAWrapper);
 
         $selector = new Typecho_Widget_Helper_Form_Element_Text('selector',
-            NULL, '.lightbox-img', '图片选择器', '通过DOM选择器定位图片元素，不填则默认 .lightbox-img，如果不选择自动添加类，可以适配一些结构特殊的主题<br>比如填写#main-content img将id为main-content的元素内所有img标签绑定灯箱<br><br>注意！！！如需填写此处必须将自动添加 lightbox-img 类功能关闭！');
+            NULL, '.lightbox-img', '图片选择器', '通过DOM选择器定位图片元素，不填则默认 .lightbox-img，如果不选择自动添加类，可以适配一些结构特殊的主题<br>比如填写#main-content img将id为main-content的元素内所有img标签绑定灯箱');
         $form->addInput($selector);
     }
 
