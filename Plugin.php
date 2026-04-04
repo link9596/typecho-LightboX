@@ -5,7 +5,7 @@
  * @package LightboX
  * @author Link
  * @version 1.2.0
- * @link https://github.com/link9596/lightboX
+ * @link https://atlinker.cn
  */
 class LightboX_Plugin implements Typecho_Plugin_Interface
 {
