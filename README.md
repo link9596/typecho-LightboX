@@ -1,3 +1,7 @@
+# LightboX
+
+仅需15kb，不需要任何依赖库实现typecho图片灯箱功能
+
 ## 食用方法
 
 将压缩包放入typecho根目录```/usr/plugins/```解压，将文件夹名称由```typecho-LightboX```改为```LightboX```
