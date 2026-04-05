@@ -13,3 +13,13 @@
 将压缩包内的```LightboX.zip```放入typecho根目录```/usr/plugins/```直接解压，不需要更改目录名称
 
 随后在typecho后台插件管理启用LightboX即可
+
+## 注意
+
+如果启用后无法生效，请检查使用的主题模板```footer.php```文件或类似的页脚文件是否包含以下代码
+
+```php
+<?php $this->footer(); ?>
+```
+
+如果没有加上即可
