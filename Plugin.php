@@ -34,7 +34,7 @@ class LightboX_Plugin implements Typecho_Plugin_Interface
     {
         $enable = new Typecho_Widget_Helper_Form_Element_Radio('enable',
             array('1' => '开启', '0' => '关闭'),
-            '1', '启用灯箱效果', '');
+            '1', '启用灯箱效果', '默认将所有带有.lightbox-img类的图片绑定灯箱，你也可以为图片添加.no-lightbox类让指定图片不绑定灯箱');
         $form->addInput($enable);
 
         $autoAddClass = new Typecho_Widget_Helper_Form_Element_Radio('auto_add_class',
@@ -48,7 +48,7 @@ class LightboX_Plugin implements Typecho_Plugin_Interface
         $form->addInput($removeAWrapper);
 
         $selector = new Typecho_Widget_Helper_Form_Element_Text('selector',
-            NULL, '.lightbox-img', '图片选择器', '通过DOM选择器定位图片元素，不填则默认 .lightbox-img，如果不选择自动添加类，可以适配一些结构特殊的主题<br>比如填写#main-content img将id为main-content的元素内所有img标签绑定灯箱');
+            NULL, '.lightbox-img:not(.no-lightbox)', '图片选择器', '不填则默认 .lightbox-img:not(.no-lightbox)，通过DOM定位图片元素适配一些结构特殊的主题<br>比如填写#main-content img将id为main-content的元素内所有img标签绑定灯箱');
         $form->addInput($selector);
     }
 
